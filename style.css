@@ -1,0 +1,193 @@
+body{
+  text-align: center;
+  margin: 0 auto;
+  background-color: #F5FFFA;
+  width: 1439px;
+  font-family: 'Josefin Sans', sans-serif;
+}
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@1,300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@200;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@300&family=Montserrat:wght@300&family=Sacramento&display=swap');
+.top{
+  margin: 0 auto;
+  padding: 0;
+  width: 1439px;
+  height: 790px;
+  overflow: hidden;
+  background-attachment: fixed;
+  animation: change 30s infinite linear;
+  background-size: 1449px 789px;
+  background-repeat: no-repeat;
+}
+@keyframes change {
+  0%,100%{
+    left: 0%;
+    background-image: url(img/background-1.png);
+  }
+  16.67%{
+    left: 0;
+    background-image: url(img/background-2.png);
+  }
+  33.34%{
+    left: 0%;
+    background-image: url(img/background-3.png);
+  }
+  50.01%{
+    left: 0%;
+    background-image: url(img/background-4.png);
+  }
+  66.68%{
+    left: 0%;
+    background-image: url(img/background-5.png);
+  }
+  83.35%{
+    left: 0%;
+    background-image: url(img/background-6.png);
+  }
+}
+.myimg{
+  border: 2px solid #F5FFFA;
+  border-radius: 50px 50px 50px 50px;
+  -webkit-border-radius: 50px 50px 50px 50px;
+  -moz-border-radius: 50px 50px 50px 50px;
+  margin-top: 370px;
+}
+.top_button{
+  padding: 8px 15px 8px 15px;
+  background: #ff0075;
+  color: #ffffff;
+  border: 1px solid #ffffff;
+  border-radius: 20px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  font-family: 'Josefin Sans', sans-serif;
+  display: inline-block;
+  text-decoration: none;
+  box-shadow: 0 0 20px #ff0075;
+
+}
+.top_button:hover{
+  color: #000000;
+  background: #00d0ff;
+  border: 1px solid #000000;
+
+  animation: button 1s ease-in-out infinite alternate-reverse;
+  -webkit-animation: button 1s ease-in-out infinite alternate-reverse;
+  -moz-animation: button 1s ease-in-out infinite alternate-reverse;
+  box-shadow: 0 0 20px #00d0ff;
+}
+-webkit-@keyframes button {
+  0%,80%{
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+  }
+  100%{
+    -webkit-border-radius: 60px;
+    border-radius: 60px;
+    background: #50d2a2;
+    color: #ffffff;
+    box-shadow: 0 0 40px #50d2a2;
+    text-shadow: 0 0 30px #ffffff;
+  }
+}
+-moz-@keyframes button {
+  0%,80%{
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+  }
+  100%{
+    -webkit-border-radius: 60px;
+    -moz-border-radius: 60px;
+    border-radius: 60px;
+    background: #50d2a2;
+    color: #ffffff;
+    box-shadow: 0 0 40px #50d2a2;
+    text-shadow: 0 0 30px #ffffff;
+  }
+}
+@keyframes button {
+  0%,80%{
+    border-radius: 10px;
+  }
+  100%{
+    border-radius: 60px;
+    background: #50d2a2;
+    color: #ffffff;
+    box-shadow: 0 0 40px #50d2a2;
+    text-shadow: 0 0 30px #ffffff;
+  }
+}
+.slider{
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+  margin-right: 0;
+}
+.slider figure div{
+  float: left;
+  width: 20%;
+}
+.slider figure img{
+  width: 1439px;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  float: left;
+}
+.slider figure {
+  position: relative;
+  width: 500%;
+  margin: 0;
+  animation: animation 20s infinite ease-out;
+}
+.imh{
+  position: relative;
+}
+h1{
+  position: absolute;
+  color: #fff;
+  margin: 0;
+  font-size: 100px;
+  text-align: center;
+  padding: 51px 0 203px 0;
+  background: rgba(0, 0, 0, 0.5);
+  width: 1439px;
+  height: 148px;
+  z-index: 1;
+  font-family: 'Sacramento', cursive;
+  text-shadow: 0 0 19px #bb2929;
+  letter-spacing: 2px;
+  word-spacing: 2px;
+}
+p{
+  position: absolute;
+  margin: 0;
+  color: #fff;
+  text-shadow: 0 0 10px #51c12cbf;
+  font-size: 57px;
+  text-align: center;
+  top: 225px;
+  width: 1439px;
+  z-index: 1;
+  font-family: 'Sacramento', cursive;
+  letter-spacing: 2px;
+}
+@keyframes animation {
+  0%,100%{
+    left: 0%;
+  }
+  20%{
+    left: -100%;
+  }
+  40%{
+    left: -200%;
+  }
+  60%{
+    left: -300%;
+  }
+  80%{
+    left: -400%;
+  }
+}
